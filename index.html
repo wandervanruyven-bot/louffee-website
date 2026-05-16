@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louffee Coffee — Diemen</title>
+    <meta name="description" content="Louffee Coffee — Specialty coffee in het hart van Diemen. Gevestigd in OurCampus Amsterdam Diemen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo">Louffee</a>
+            <button class="nav__toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#home" data-nl="Home" data-en="Home">Home</a></li>
+                <li><a href="#about" data-nl="Over Ons" data-en="About">Over Ons</a></li>
+                <li><a href="#menu" data-nl="Menu" data-en="Menu">Menu</a></li>
+                <li><a href="#reviews" data-nl="Reviews" data-en="Reviews">Reviews</a></li>
+                <li><a href="#contact" data-nl="Contact" data-en="Contact">Contact</a></li>
+                <li>
+                    <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+                        <span class="lang-switch__option active" data-lang="nl">NL</span>
+                        <span class="lang-switch__divider">|</span>
+                        <span class="lang-switch__option" data-lang="en">EN</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero__bg">
+            <img src="images/coffee-hand.png" alt="Louffee Coffee" loading="eager">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__subtitle" data-nl="Specialty Coffee" data-en="Specialty Coffee">Specialty Coffee</p>
+            <h1 class="hero__title">Louffee</h1>
+            <p class="hero__location" data-nl="Diemen, Amsterdam" data-en="Diemen, Amsterdam">Diemen, Amsterdam</p>
+            <div class="hero__info">
+                <p data-nl="Dalsteindreef 2037 · OurCampus Diemen" data-en="Dalsteindreef 2037 · OurCampus Diemen">Dalsteindreef 2037 · OurCampus Diemen</p>
+            </div>
+            <a href="#menu" class="hero__btn" data-nl="Bekijk Menu" data-en="View Menu">Bekijk Menu</a>
+        </div>
+        <div class="hero__scroll">
+            <span data-nl="Scroll" data-en="Scroll">Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image">
+                    <img src="images/coffee-latte.png" alt="Louffee latte art" loading="lazy">
+                </div>
+                <div class="about__content">
+                    <p class="section__label" data-nl="Over Ons" data-en="About Us">Over Ons</p>
+                    <h2 class="section__title" data-nl="Welkom bij Louffee" data-en="Welcome to Louffee">Welkom bij Louffee</h2>
+                    <div class="about__text">
+                        <p data-nl="Louffee Coffee is een gezellige specialty coffee plek in het hart van Diemen, gevestigd in OurCampus Amsterdam Diemen. Bij ons draait alles om kwaliteit, ambacht en de perfecte kop koffie." data-en="Louffee Coffee is a cozy specialty coffee spot in the heart of Diemen, located inside OurCampus Amsterdam Diemen. Everything we do revolves around quality, craftsmanship, and the perfect cup of coffee.">Louffee Coffee is een gezellige specialty coffee plek in het hart van Diemen, gevestigd in OurCampus Amsterdam Diemen. Bij ons draait alles om kwaliteit, ambacht en de perfecte kop koffie.</p>
+                        <p data-nl="Of je nu langskomt voor een snelle espresso, een rustige cappuccino of een koffie om mee te nemen — wij zorgen dat elke kop met zorg en passie wordt bereid. Onze barista's werken met zorgvuldig geselecteerde bonen om je de beste specialty coffee ervaring te geven." data-en="Whether you stop by for a quick espresso, a relaxing cappuccino, or a coffee to go — we make sure every cup is crafted with care and passion. Our baristas work with carefully selected beans to give you the best specialty coffee experience.">Of je nu langskomt voor een snelle espresso, een rustige cappuccino of een koffie om mee te nemen — wij zorgen dat elke kop met zorg en passie wordt bereid. Onze barista's werken met zorgvuldig geselecteerde bonen om je de beste specialty coffee ervaring te geven.</p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number">4.8</span>
+                            <span class="about__stat-label" data-nl="Google Score" data-en="Google Rating">Google Score</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">400+</span>
+                            <span class="about__stat-label" data-nl="Reviews" data-en="Reviews">Reviews</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-nl="Specialty" data-en="Specialty">Specialty</span>
+                            <span class="about__stat-label" data-nl="Koffie" data-en="Coffee">Koffie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <p class="section__label section__label--center" data-nl="Ons Menu" data-en="Our Menu">Ons Menu</p>
+            <h2 class="section__title section__title--center" data-nl="Wat wij serveren" data-en="What We Serve">Wat wij serveren</h2>
+
+            <div class="menu__categories">
+                <button class="menu__tab active" data-category="coffee" data-nl="Koffie" data-en="Coffee">Koffie</button>
+                <button class="menu__tab" data-category="tea" data-nl="Thee & Meer" data-en="Tea & More">Thee & Meer</button>
+                <button class="menu__tab" data-category="food" data-nl="Food" data-en="Food">Food</button>
+            </div>
+
+            <div class="menu__grid" id="menuGrid">
+                <!-- Coffee items -->
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Espresso" data-en="Espresso">Espresso</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;2,80</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Enkele shot, puur en intens" data-en="Single shot, pure and intense">Enkele shot, puur en intens</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Dubbele Espresso" data-en="Double Espresso">Dubbele Espresso</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Dubbele shot voor extra kracht" data-en="Double shot for extra strength">Dubbele shot voor extra kracht</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Cappuccino" data-en="Cappuccino">Cappuccino</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,80</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Espresso met geschuimde melk" data-en="Espresso with steamed milk foam">Espresso met geschuimde melk</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Flat White" data-en="Flat White">Flat White</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;4,00</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Dubbele espresso met fluweelzachte melk" data-en="Double espresso with velvety steamed milk">Dubbele espresso met fluweelzachte melk</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Latte" data-en="Latte">Latte</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;4,20</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Espresso met veel warme melk en latte art" data-en="Espresso with steamed milk and latte art">Espresso met veel warme melk en latte art</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Cortado" data-en="Cortado">Cortado</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Espresso met een scheutje warme melk" data-en="Espresso with a dash of warm milk">Espresso met een scheutje warme melk</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Americano" data-en="Americano">Americano</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,20</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Espresso aangevuld met heet water" data-en="Espresso topped with hot water">Espresso aangevuld met heet water</p>
+                </div>
+                <div class="menu__item" data-category="coffee">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Ijskoffie" data-en="Iced Coffee">Ijskoffie</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;4,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Koude koffie op ijs, verfrissend" data-en="Cold brew over ice, refreshing">Koude koffie op ijs, verfrissend</p>
+                </div>
+
+                <!-- Tea items -->
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Thee" data-en="Tea">Thee</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,00</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Diverse smaken beschikbaar" data-en="Various flavors available">Diverse smaken beschikbaar</p>
+                </div>
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Matcha Latte" data-en="Matcha Latte">Matcha Latte</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;4,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Japanse matcha met warme melk" data-en="Japanese matcha with steamed milk">Japanse matcha met warme melk</p>
+                </div>
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Chai Latte" data-en="Chai Latte">Chai Latte</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;4,20</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Kruidige chai met geschuimde melk" data-en="Spiced chai with frothed milk">Kruidige chai met geschuimde melk</p>
+                </div>
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Warme Chocolademelk" data-en="Hot Chocolate">Warme Chocolademelk</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,80</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Rijke chocolade met warme melk" data-en="Rich chocolate with steamed milk">Rijke chocolade met warme melk</p>
+                </div>
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Verse Muntthee" data-en="Fresh Mint Tea">Verse Muntthee</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Met verse muntblaadjes" data-en="With fresh mint leaves">Met verse muntblaadjes</p>
+                </div>
+                <div class="menu__item hidden" data-category="tea">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Limonade" data-en="Lemonade">Limonade</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Huisgemaakte limonade" data-en="Homemade lemonade">Huisgemaakte limonade</p>
+                </div>
+
+                <!-- Food items -->
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Croissant" data-en="Croissant">Croissant</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,00</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Vers gebakken boter croissant" data-en="Freshly baked butter croissant">Vers gebakken boter croissant</p>
+                </div>
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Tosti" data-en="Grilled Sandwich">Tosti</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;5,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Kaas & ham of kaas & tomaat" data-en="Cheese & ham or cheese & tomato">Kaas & ham of kaas & tomaat</p>
+                </div>
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Bananenbrood" data-en="Banana Bread">Bananenbrood</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;3,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Huisgemaakt met walnoten" data-en="Homemade with walnuts">Huisgemaakt met walnoten</p>
+                </div>
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Cookie" data-en="Cookie">Cookie</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;2,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Chocolate chip, vers gebakken" data-en="Chocolate chip, freshly baked">Chocolate chip, vers gebakken</p>
+                </div>
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Avocado Toast" data-en="Avocado Toast">Avocado Toast</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;7,50</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Zuurdesembrood met verse avocado" data-en="Sourdough with fresh avocado">Zuurdesembrood met verse avocado</p>
+                </div>
+                <div class="menu__item hidden" data-category="food">
+                    <div class="menu__item-header">
+                        <span class="menu__item-name" data-nl="Yoghurt Bowl" data-en="Yoghurt Bowl">Yoghurt Bowl</span>
+                        <span class="menu__item-line"></span>
+                        <span class="menu__item-price">&euro;6,00</span>
+                    </div>
+                    <p class="menu__item-desc" data-nl="Met granola, vers fruit en honing" data-en="With granola, fresh fruit and honey">Met granola, vers fruit en honing</p>
+                </div>
+            </div>
+
+            <p class="menu__note" data-nl="Prijzen zijn indicatief. Havermelk, sojamelk of amandelmelk: + &euro;0,50" data-en="Prices are indicative. Oat milk, soy milk or almond milk: + &euro;0.50">Prijzen zijn indicatief. Havermelk, sojamelk of amandelmelk: + &euro;0,50</p>
+        </div>
+    </section>
+
+    <!-- Gallery divider -->
+    <section class="gallery">
+        <div class="gallery__grid">
+            <div class="gallery__item">
+                <img src="images/coffee-latte.png" alt="Louffee latte art" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="images/coffee-hand.png" alt="Louffee coffee" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="images/takeaway-cups.png" alt="Louffee takeaway" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <p class="section__label section__label--center" data-nl="Wat onze gasten zeggen" data-en="What Our Guests Say">Wat onze gasten zeggen</p>
+            <h2 class="section__title section__title--center" data-nl="Reviews" data-en="Reviews">Reviews</h2>
+            <div class="reviews__rating">
+                <span class="reviews__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="reviews__score">4.8 / 5</span>
+                <span class="reviews__count" data-nl="op basis van 400+ reviews" data-en="based on 400+ reviews">op basis van 400+ reviews</span>
+            </div>
+            <div class="reviews__grid">
+                <div class="reviews__card">
+                    <div class="reviews__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="reviews__card-text" data-nl="Heerlijke koffie en een hele fijne sfeer. De latte art is prachtig en de smaak is top. Aanrader als je in de buurt bent!" data-en="Delicious coffee and a wonderful atmosphere. The latte art is beautiful and the taste is excellent. Highly recommended if you're in the area!">"Heerlijke koffie en een hele fijne sfeer. De latte art is prachtig en de smaak is top. Aanrader als je in de buurt bent!"</p>
+                    <div class="reviews__card-author">
+                        <span class="reviews__card-name">Sarah M.</span>
+                        <span class="reviews__card-source">Google</span>
+                    </div>
+                </div>
+                <div class="reviews__card">
+                    <div class="reviews__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="reviews__card-text" data-nl="Beste specialty coffee in Diemen! Het personeel is super vriendelijk en de koffie is van topkwaliteit. Kom hier elke week." data-en="Best specialty coffee in Diemen! The staff is super friendly and the coffee is top quality. I come here every week.">"Beste specialty coffee in Diemen! Het personeel is super vriendelijk en de koffie is van topkwaliteit. Kom hier elke week."</p>
+                    <div class="reviews__card-author">
+                        <span class="reviews__card-name">Thomas K.</span>
+                        <span class="reviews__card-source">Google</span>
+                    </div>
+                </div>
+                <div class="reviews__card">
+                    <div class="reviews__card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="reviews__card-text" data-nl="Perfecte plek om te werken of bij te praten met vrienden. De cappuccino is de beste die ik in de omgeving heb gehad." data-en="Perfect place to work or catch up with friends. The cappuccino is the best I've had in the area.">"Perfecte plek om te werken of bij te praten met vrienden. De cappuccino is de beste die ik in de omgeving heb gehad."</p>
+                    <div class="reviews__card-author">
+                        <span class="reviews__card-name">Lisa V.</span>
+                        <span class="reviews__card-source">Google</span>
+                    </div>
+                </div>
+                <div class="reviews__card">
+                    <div class="reviews__card-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <p class="reviews__card-text" data-nl="Fijne koffiezaak in OurCampus. Goede koffie, prima prijzen en gezellige sfeer. De to-go bekers zijn ook mooi!" data-en="Great coffee place in OurCampus. Good coffee, fair prices and a cozy atmosphere. The to-go cups look great too!">"Fijne koffiezaak in OurCampus. Goede koffie, prima prijzen en gezellige sfeer. De to-go bekers zijn ook mooi!"</p>
+                    <div class="reviews__card-author">
+                        <span class="reviews__card-name">Mark D.</span>
+                        <span class="reviews__card-source">Google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram section">
+        <div class="container">
+            <p class="section__label section__label--center" data-nl="Volg ons" data-en="Follow Us">Volg ons</p>
+            <h2 class="section__title section__title--center">@louffeecoffee</h2>
+            <div class="instagram__grid">
+                <a href="#" class="instagram__item" aria-label="Instagram post">
+                    <img src="images/coffee-latte.png" alt="Instagram" loading="lazy">
+                    <div class="instagram__overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram__item" aria-label="Instagram post">
+                    <img src="images/coffee-hand.png" alt="Instagram" loading="lazy">
+                    <div class="instagram__overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram__item" aria-label="Instagram post">
+                    <img src="images/takeaway-cups.png" alt="Instagram" loading="lazy">
+                    <div class="instagram__overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                    </div>
+                </a>
+                <a href="#" class="instagram__item" aria-label="Instagram post">
+                    <img src="images/coffee-latte.png" alt="Instagram" loading="lazy">
+                    <div class="instagram__overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <p class="section__label" data-nl="Bezoek Ons" data-en="Visit Us">Bezoek Ons</p>
+                    <h2 class="section__title" data-nl="Contact" data-en="Contact">Contact</h2>
+
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <strong data-nl="Adres" data-en="Address">Adres</strong>
+                                <p>Dalsteindreef 2037<br>1112 XC Diemen</p>
+                                <p data-nl="Gevestigd in OurCampus Amsterdam Diemen" data-en="Located in OurCampus Amsterdam Diemen">Gevestigd in OurCampus Amsterdam Diemen</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <strong data-nl="Telefoon" data-en="Phone">Telefoon</strong>
+                                <p><a href="tel:+31625157497">+31 6 25157497</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail">
+                            <div class="contact__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <strong data-nl="Openingstijden" data-en="Opening Hours">Openingstijden</strong>
+                                <div class="contact__hours">
+                                    <div class="contact__hour">
+                                        <span data-nl="Maandag" data-en="Monday">Maandag</span>
+                                        <span>8:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Dinsdag" data-en="Tuesday">Dinsdag</span>
+                                        <span>8:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Woensdag" data-en="Wednesday">Woensdag</span>
+                                        <span>8:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Donderdag" data-en="Thursday">Donderdag</span>
+                                        <span>8:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Vrijdag" data-en="Friday">Vrijdag</span>
+                                        <span>8:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Zaterdag" data-en="Saturday">Zaterdag</span>
+                                        <span>9:00 – 17:00</span>
+                                    </div>
+                                    <div class="contact__hour">
+                                        <span data-nl="Zondag" data-en="Sunday">Zondag</span>
+                                        <span>9:00 – 17:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.5!2d4.9636!3d52.3388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b0a0a0a0a0a%3A0x0!2sDalsteindreef+2037%2C+Diemen!5e0!3m2!1snl!2snl!4v1"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Louffee Coffee locatie">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Louffee</h3>
+                    <p class="footer__tagline" data-nl="Specialty Coffee · Diemen" data-en="Specialty Coffee · Diemen">Specialty Coffee · Diemen</p>
+                </div>
+                <div class="footer__links">
+                    <h4 data-nl="Navigatie" data-en="Navigation">Navigatie</h4>
+                    <ul>
+                        <li><a href="#home" data-nl="Home" data-en="Home">Home</a></li>
+                        <li><a href="#about" data-nl="Over Ons" data-en="About">Over Ons</a></li>
+                        <li><a href="#menu" data-nl="Menu" data-en="Menu">Menu</a></li>
+                        <li><a href="#reviews" data-nl="Reviews" data-en="Reviews">Reviews</a></li>
+                        <li><a href="#contact" data-nl="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4 data-nl="Volg Ons" data-en="Follow Us">Volg Ons</h4>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Louffee Coffee. <span data-nl="Alle rechten voorbehouden." data-en="All rights reserved.">Alle rechten voorbehouden.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
