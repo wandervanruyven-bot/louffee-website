@@ -1,0 +1,23 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Voorkom dat de site in een iframe op andere sites geladen wordt (clickjacking)
+    X-Frame-Options = "DENY"
+
+    # Voorkom dat browsers bestanden als verkeerd type interpreteren
+    X-Content-Type-Options = "nosniff"
+
+    # Schakel XSS-filter in oudere browsers in
+    X-XSS-Protection = "1; mode=block"
+
+    # Verberg welke site bezoekers vandaan komen
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Beperk welke browser-functies de site mag gebruiken
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+    # Dwing HTTPS af voor 1 jaar
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Content Security Policy: sta alleen vertrouwde bronnen toe
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self';"
