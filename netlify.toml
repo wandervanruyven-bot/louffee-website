@@ -1,23 +1,72 @@
+# ===== SECURITY HEADERS =====
 [[headers]]
   for = "/*"
   [headers.values]
-    # Voorkom dat de site in een iframe op andere sites geladen wordt (clickjacking)
+    # Voorkom clickjacking (site in iframe laden op andere sites)
     X-Frame-Options = "DENY"
 
-    # Voorkom dat browsers bestanden als verkeerd type interpreteren
+    # Voorkom MIME-type sniffing
     X-Content-Type-Options = "nosniff"
 
-    # Schakel XSS-filter in oudere browsers in
+    # XSS bescherming voor oudere browsers
     X-XSS-Protection = "1; mode=block"
 
-    # Verberg welke site bezoekers vandaan komen
+    # Verberg referrer-info naar externe sites
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-    # Beperk welke browser-functies de site mag gebruiken
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    # Beperk browser-functies (geen camera, microfoon, GPS, betalen)
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=()"
 
-    # Dwing HTTPS af voor 1 jaar
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Dwing HTTPS af voor 2 jaar
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
 
-    # Content Security Policy: sta alleen vertrouwde bronnen toe
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self';"
+    # Content Security Policy: alleen vertrouwde bronnen
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; media-src 'none';"
+
+    # Schakel cross-origin isolation in
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
+    Cross-Origin-Resource-Policy = "same-origin"
+
+    # Cache controle voor HTML pagina's
+    Cache-Control = "no-store, no-cache, must-revalidate"
+
+# ===== BLOKKEER GEVOELIGE MAPPEN =====
+[[redirects]]
+  from = "/.claude/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.github/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.git/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.netlify/private/*"
+  to = "/404"
+  status = 404
+  force = true
+
+# ===== CACHE VOOR STATISCHE BESTANDEN =====
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

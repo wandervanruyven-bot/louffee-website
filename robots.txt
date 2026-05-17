@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /.claude/
+Disallow: /.github/
+Disallow: /.git/
+Disallow: /.netlify/
+
+Sitemap: https://louffee-coffee.netlify.app/sitemap.xml
